@@ -15,7 +15,10 @@ weatherForm.addEventListener('submit', (e) => {
         messageOne.textContent = data.error
       } else {
         messageOne.textContent = data.location
-        messageTwo.textContent = data.forecast
+        messageTwo.innerHTML = '<img class="weather-icon" src="' + data.forecast.icon + '" alt="weather icon"> ' + data.forecast.desc
+        messageTwo.innerHTML += '<div>' + data.forecast.temperature + '</div>'
+        messageTwo.innerHTML += '<div>' + data.forecast.wind + '</div>'
+        messageTwo.innerHTML += '<div>' + data.forecast.humidity + '</div>'
       }
     })
   }

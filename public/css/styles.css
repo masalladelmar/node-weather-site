@@ -43,6 +43,11 @@ button {
   padding: 8px;
 }
 
+.weather-icon {
+  float: left;
+  margin-right: 10px;
+}
+
 footer {
   color: #888888;
   border-top: 1px solid #eeeeee;
